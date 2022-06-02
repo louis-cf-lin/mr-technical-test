@@ -42,7 +42,6 @@ const Home: NextPage<Props> = ({ productInfo }) => {
         <div className={classes.price}>${productInfo.price.toFixed(2)}</div>
         <p className={classes.description}>{productInfo.description}</p>
         <SizeOptions sizeOptions={productInfo.sizeOptions} />
-        <button className={classes.addBtn}>ADD TO CART</button>
       </main>
     </div>
   );

@@ -14,10 +14,18 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   span {
-    color: $required;
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
+  }
+  .required {
+    margin-left: -0.25em;
+    color: $required;
+  }
+  .selectedOption {
+    color: $font-dark;
+    font-weight: 600;
+    margin-left: 8px;
   }
 }
 
@@ -33,9 +41,27 @@
   align-items: center;
   justify-content: center;
   color: $font-light;
-  font-weight: 600;
+  font-weight: 500;
   font-family: $inter;
   font-size: 11px;
   border: thin solid $border-light;
   margin-right: 5px;
+  &.selectedBtn {
+    color: $font-dark;
+    border: 2px solid $border-dark;
+  }
+}
+
+.addBtn {
+  align-self: flex-start;
+  margin-top: 20px;
+  height: 35px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  font-family: $inter;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 2px solid $border-dark;
 }

@@ -1,12 +1,12 @@
 @import "./variables";
 
 .container {
-  padding: 15px 0;
+  padding-top: 15px;
   width: 100%;
 }
 
 .main {
-  min-height: calc(100vh - 30px);
+  min-height: calc(100vh - 15px);
   padding: 30px 14px;
   flex: 1;
   display: flex;
@@ -40,25 +40,4 @@
   color: $font-light;
   font-family: $inter;
   font-weight: 500;
-}
-
-.addBtn {
-  align-self: flex-start;
-  margin-top: 20px;
-  height: 35px;
-  padding: 0 18px;
-  display: flex;
-  align-items: center;
-  font-family: $inter;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  border: 2px solid $border-dark;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
