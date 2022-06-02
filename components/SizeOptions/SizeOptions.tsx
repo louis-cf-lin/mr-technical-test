@@ -10,11 +10,18 @@ type Props = {
 
 const SizeOptions: FC<Props> = ({ productInfo, setCart }) => {
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
+  const [showError, setShowError] = useState(false);
 
-  const optionClickHandler = (size: Size) => setSelectedSize(size);
+  const optionClickHandler = (size: Size) => {
+    // Hide error if it currently shown
+    if (showError) setShowError(false);
+    setSelectedSize(size);
+  };
 
   const addToCartHandler = () => {
-    if (!selectedSize) return; // TODO - handle error
+    // Handle size not selected
+    if (!selectedSize) return setShowError(true);
+
     setCart((cart) => {
       // If the selected product and size is already in the cart, get its index. Otherwise return -1
       const idx = cart.findIndex(
@@ -48,6 +55,9 @@ const SizeOptions: FC<Props> = ({ productInfo, setCart }) => {
         SIZE <span className={classes.required}>*</span>{" "}
         {selectedSize && (
           <span className={classes.selectedOption}>{selectedSize.label}</span>
+        )}
+        {showError && (
+          <span className={classes.error}>Please select a size</span>
         )}
       </div>
       <div className={classes.btnContainer}>

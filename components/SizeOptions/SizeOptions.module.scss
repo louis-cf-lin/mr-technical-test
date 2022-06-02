@@ -27,6 +27,11 @@
     font-weight: 600;
     margin-left: 8px;
   }
+  .error {
+    color: $required;
+    margin-left: 8px;
+    font-weight: 400;
+  }
 }
 
 .btnContainer {
