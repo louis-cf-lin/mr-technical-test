@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Header from "../components/Header/Header";
-import { CartItem } from "../types/CartItem";
+import { Cart } from "../types/Cart";
 import { ProductInfo } from "../types/ProductInfo";
 
 import classes from "../styles/Home.module.scss";
@@ -14,7 +14,7 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ productInfo }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
+  const [cart, setCart] = useState<Cart>([]);
 
   console.log(productInfo);
 
@@ -41,7 +41,11 @@ const Home: NextPage<Props> = ({ productInfo }) => {
         <h1 className={classes.h1}>{productInfo.title}</h1>
         <div className={classes.price}>${productInfo.price.toFixed(2)}</div>
         <p className={classes.description}>{productInfo.description}</p>
-        <SizeOptions sizeOptions={productInfo.sizeOptions} />
+        <SizeOptions
+          productId={productInfo.id}
+          sizeOptions={productInfo.sizeOptions}
+          setCart={setCart}
+        />
       </main>
     </div>
   );

@@ -1,9 +1,9 @@
 import { FC } from "react";
-import { CartItem } from "../../types/CartItem";
+import { Cart } from "../../types/Cart";
 import classes from "./Header.module.scss";
 
 type Props = {
-  cart: CartItem[];
+  cart: Cart;
 };
 
 // TODO
