@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5vw;
+  height: 30px;
+  background: $header-bg;
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  * {
+    color: $font-light;
+    margin: 0 4px;
+  }
+  .icon {
+    font-size: 12px;
+  }
+  .label {
+    display: none;
+  }
+  .counter {
+    font-family: $arimo;
+    font-size: 11px;
+  }
+}
