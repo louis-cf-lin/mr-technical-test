@@ -1,17 +1,13 @@
-import Image from "next/image";
 import { FC, useState } from "react";
 import { Cart } from "../../types/Cart";
-import { ProductInfo } from "../../types/ProductInfo";
 import classes from "./Header.module.scss";
 import MiniCartItem from "./MiniCartItem";
 
 type Props = {
-  productInfo: ProductInfo;
   cart: Cart;
 };
 
-// TODO
-const Header: FC<Props> = ({ productInfo, cart }) => {
+const Header: FC<Props> = ({ cart }) => {
   const [showMiniCart, setShowMiniCart] = useState(false);
 
   return (
@@ -23,6 +19,7 @@ const Header: FC<Props> = ({ productInfo, cart }) => {
           }`}
           title="Toggle cart"
           onClick={() => setShowMiniCart((state) => !state)}
+          // TODO - uncomment
           // onBlur={() => setShowMiniCart(false)}
         >
           <i className={`material-icons ${classes.icon}`}>shopping_cart</i>

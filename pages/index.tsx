@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../components/Header/Header";
 import { Cart } from "../types/Cart";
 import { ProductInfo } from "../types/ProductInfo";
@@ -26,7 +26,7 @@ const Home: NextPage<Props> = ({ productInfo }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header cart={cart} productInfo={productInfo} />
+      <Header cart={cart} />
       <main className={classes.main}>
         <div className={classes.imgContainer}>
           <Image
@@ -36,10 +36,14 @@ const Home: NextPage<Props> = ({ productInfo }) => {
             alt={productInfo.title}
           />
         </div>
-        <h1 className={classes.h1}>{productInfo.title}</h1>
-        <div className={classes.price}>${productInfo.price.toFixed(2)}</div>
-        <p className={classes.description}>{productInfo.description}</p>
-        <SizeOptions productInfo={productInfo} setCart={setCart} />
+        <div className={classes.productInfo}>
+          <h1 className={classes.h1}>{productInfo.title}</h1>
+          <div className={classes.divider} />
+          <div className={classes.price}>${productInfo.price.toFixed(2)}</div>
+          <div className={classes.divider} />
+          <p className={classes.description}>{productInfo.description}</p>
+          <SizeOptions productInfo={productInfo} setCart={setCart} />
+        </div>
       </main>
     </div>
   );

@@ -51,6 +51,7 @@
   &.activeBtn {
     border-color: $border-light;
     border-bottom-color: white;
+    // Transitions off when mini cart is toggled to match appearance
     transition: none;
   }
 }
@@ -77,4 +78,29 @@
   font-style: "italic";
   color: $font-light;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 36px;
+  }
+  .cartBtn {
+    * {
+      margin: 0 3px;
+    }
+    .icon {
+      display: none;
+    }
+    .label {
+      display: block;
+      font-size: 13px;
+    }
+    .counter {
+      font-size: 13px;
+    }
+  }
+  .miniCart {
+    max-width: 394px;
+    padding: 0 20px;
+  }
 }

@@ -70,3 +70,25 @@
   letter-spacing: 0.04em;
   border: 2px solid $border-dark;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 42px;
+  }
+  .heading {
+    font-size: 13px;
+  }
+  .btn {
+    height: 52px;
+    width: 52px;
+    font-size: 13px;
+    margin-right: 8px;
+  }
+  .addBtn {
+    margin-top: 28px;
+    height: 40px;
+    padding: 0 22px;
+    font-size: 16px;
+    letter-spacing: 0.047em;
+  }
+}

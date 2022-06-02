@@ -38,3 +38,31 @@
   font-size: 12px;
   letter-spacing: -0.015em;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 16px 0;
+  }
+  .image {
+    width: 82px;
+  }
+  .details {
+    margin-left: 18px;
+    div {
+      margin-bottom: 11px;
+    }
+  }
+  .title {
+    font-size: 15px;
+    letter-spacing: -0.0125em;
+  }
+  .quantity {
+    font-size: 14px;
+    .price {
+      font-size: 15px;
+    }
+  }
+  .size {
+    font-size: 14px;
+  }
+}
