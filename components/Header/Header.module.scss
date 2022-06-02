@@ -58,6 +58,7 @@
 .miniCart {
   position: absolute;
   width: calc(100vw - 48px);
+  max-width: 300px;
   bottom: 2px;
   right: 0;
   transform: translateY(100%);
@@ -69,16 +70,11 @@
   padding: 0 14px;
 }
 
-.cartItem {
-  margin: 18px 0;
-  display: flex;
-}
-
-.itemImage {
-  width: 70px;
-}
-
-.itemDetails {
-  display: flex;
-  flex-direction: column;
+.emptyCart {
+  padding: 24px 0;
+  font-size: 12px;
+  font-family: $inter;
+  font-style: "italic";
+  color: $font-light;
+  text-align: center;
 }

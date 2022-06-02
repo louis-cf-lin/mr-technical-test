@@ -3,6 +3,7 @@ import { FC, useState } from "react";
 import { Cart } from "../../types/Cart";
 import { ProductInfo } from "../../types/ProductInfo";
 import classes from "./Header.module.scss";
+import MiniCartItem from "./MiniCartItem";
 
 type Props = {
   productInfo: ProductInfo;
@@ -32,21 +33,20 @@ const Header: FC<Props> = ({ productInfo, cart }) => {
         </button>
         {showMiniCart && (
           <div className={classes.miniCart}>
-            {cart.map((item) => (
-              <div key={item.productInfo.id} className={classes.cartItem}>
-                <div className={classes.itemImage}>
-                  <Image
-                    src="/classic-tee.jpg"
-                    height={900}
-                    width={600}
-                    alt={productInfo.title}
-                  />
-                </div>
-                <div className={classes.itemDetails}>
-                  <div>{productInfo.title}</div>
-                </div>
+            {cart.length > 0 ? (
+              cart.map((item) => (
+                <MiniCartItem
+                  // Cart items are unique by both the product and size
+                  key={`${item.productInfo.id}_${item.size.id}`}
+                  item={item}
+                />
+              ))
+            ) : (
+              <div className={classes.emptyCart}>
+                Your cart is empty. Select a size and click &ldquo;ADD TO
+                CART&rdquo;
               </div>
-            ))}
+            )}
           </div>
         )}
       </div>

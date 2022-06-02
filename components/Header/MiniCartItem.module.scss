@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.container {
+  margin: 18px 0;
+  display: flex;
+}
+
+.image {
+  width: 70px;
+}
+
+.details {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  * {
+    font-family: $inter;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+.title {
+  font-size: 13px;
+  letter-spacing: -0.015em;
+}
+
+.quantity {
+  font-size: 12px;
+  .price {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+
+.size {
+  font-size: 12px;
+  letter-spacing: -0.015em;
+}
