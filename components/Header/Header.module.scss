@@ -3,11 +3,18 @@
 .header {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   padding: 0 14px;
   height: 30px;
   background: $header-bg;
+}
+
+// Header inner allows the header to match responsive layout of main content
+.headerInner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .cartContainer {
@@ -102,5 +109,26 @@
   .miniCart {
     max-width: 394px;
     padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    height: 40px;
+    justify-content: center;
+  }
+  .headerInner {
+    max-width: 1392px;
+  }
+  .cartBtn {
+    .label {
+      font-size: 14px;
+    }
+    .counter {
+      font-size: 14px;
+    }
+  }
+  .miniCart {
+    padding: 0 26px;
   }
 }

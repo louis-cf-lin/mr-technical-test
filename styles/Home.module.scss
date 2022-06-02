@@ -53,10 +53,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    padding-top: 17px;
+  }
   .main {
     align-self: center;
     flex-direction: row;
-    max-width: 1366px;
+    max-width: none;
     padding-top: 39px;
   }
   .imgContainer {
@@ -85,5 +88,31 @@
     margin-top: 22px;
     font-size: 13px;
     line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-top: 20px;
+  }
+  .main {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+  .imgContainer {
+    margin-right: 203px;
+  }
+  .productInfo {
+    max-width: 627px;
+  }
+  .h1 {
+    font-size: 26px;
+  }
+  .price {
+    font-size: 19px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 28px;
   }
 }

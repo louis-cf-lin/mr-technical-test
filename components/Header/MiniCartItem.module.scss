@@ -66,3 +66,31 @@
     font-size: 14px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 25px 0;
+  }
+  .image {
+    width: 94px;
+  }
+  .details {
+    margin-left: 21px;
+    div {
+      margin-bottom: 19px;
+    }
+  }
+  .title {
+    font-size: 17px;
+    letter-spacing: -0.01em;
+  }
+  .quantity {
+    font-size: 17px;
+    .price {
+      font-size: 17px;
+    }
+  }
+  .size {
+    font-size: 16px;
+  }
+}

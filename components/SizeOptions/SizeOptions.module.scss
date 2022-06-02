@@ -79,10 +79,10 @@
     font-size: 13px;
   }
   .btn {
-    height: 52px;
-    width: 52px;
+    height: 46px;
+    width: 46px;
     font-size: 13px;
-    margin-right: 8px;
+    margin-right: 6px;
   }
   .addBtn {
     margin-top: 28px;
@@ -90,5 +90,29 @@
     padding: 0 22px;
     font-size: 16px;
     letter-spacing: 0.047em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-top: 46px;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .btnContainer {
+    margin-top: 17px;
+  }
+  .btn {
+    height: 52px;
+    width: 52px;
+    font-size: 15px;
+    margin-right: 8px;
+  }
+  .addBtn {
+    height: 46px;
+    padding: 0 26px;
+    font-size: 18px;
+    letter-spacing: 0.055em;
   }
 }

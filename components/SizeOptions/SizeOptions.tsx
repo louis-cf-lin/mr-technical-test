@@ -68,12 +68,17 @@ const SizeOptions: FC<Props> = ({ productInfo, setCart }) => {
               selectedSize?.id === option.id ? classes.selectedBtn : ""
             }`}
             onClick={() => optionClickHandler(option)}
+            title={option.label}
           >
             {option.label}
           </button>
         ))}
       </div>
-      <button className={classes.addBtn} onClick={addToCartHandler}>
+      <button
+        className={classes.addBtn}
+        onClick={addToCartHandler}
+        title={"Add to cart"}
+      >
         ADD TO CART
       </button>
     </div>
