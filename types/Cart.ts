@@ -1,8 +1,8 @@
-import { Size } from "./ProductInfo";
+import { ProductInfo, Size } from "./ProductInfo";
 
 type CartItem = {
-  productId: number;
-  sizeId: Size["id"];
+  productInfo: ProductInfo;
+  size: Size;
   quantity: number;
 };
 
