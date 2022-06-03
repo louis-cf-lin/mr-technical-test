@@ -13,7 +13,7 @@ const MiniCartItem: FC<Props> = ({ item }) => {
     <div className={classes.container}>
       <div className={classes.image}>
         <Image
-          src="/classic-tee.jpg"
+          src={item.productInfo.imageURL}
           height={900}
           width={600}
           alt={item.productInfo.title}

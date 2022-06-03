@@ -30,7 +30,7 @@ const Home: NextPage<Props> = ({ productInfo }) => {
       <main className={classes.main}>
         <div className={classes.imgContainer}>
           <Image
-            src="/classic-tee.jpg"
+            src={productInfo.imageURL}
             height={900}
             width={600}
             alt={productInfo.title}

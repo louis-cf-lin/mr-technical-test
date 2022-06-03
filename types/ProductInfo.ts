@@ -8,6 +8,6 @@ export type ProductInfo = {
   title: string;
   description: string;
   price: number;
-  imageUrl: string;
+  imageURL: string;
   sizeOptions: Size[];
 };
