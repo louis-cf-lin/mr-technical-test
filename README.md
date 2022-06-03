@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MR Frontend Developer Technical Test
 
-## Getting Started
+This is a project made in fulfillment of the MR Frontend Developer Technical Test.
 
-First, run the development server:
+🚀 Built with [Next.js](https://nextjs.org/).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+💻 Deployed with [Vercel](https://vercel.com/) - visit it at <https://mr-technical-test.vercel.app/>.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## CSS
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The prototypes were reproduced in [Figma](https://www.figma.com/file/duyxFFgA3awlQvnTitU11P/MR-Technical-Interview?node-id=0%3A1) to determine units and measurements. Some CSS values are arbitrary for replication purposes.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Fonts used are Inter and DM Sans.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+CSS is written in Sassy CSS syntax and pre-compiled with Sass.
 
-## Learn More
+## Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+Following [typical media queries](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp), the page has two breakpoints:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 768px
+- 1200px
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Measurements between the two prototypes provided are interpolated. For example, `font-size: 12px` on mobile and `font-size: 16px` on desktop means `font-size: 14px` on tablet.
 
-## Deploy on Vercel
+## Other Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Automated Testing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project does not utilise automated testing due to my limited experience with testing frameworks such as Jest and Cypress. However, I have plans to learn them this year.
