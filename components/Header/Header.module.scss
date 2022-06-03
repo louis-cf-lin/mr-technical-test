@@ -33,7 +33,6 @@
   height: 100%;
   padding: 0 8px;
   z-index: 1;
-  transition: 0.2s ease-out;
   * {
     color: $font-light;
     margin: 0 4px;
@@ -48,18 +47,13 @@
     font-family: $arimo;
     font-size: 11px;
   }
-  &:hover,
   &.activeBtn {
+    border-color: $border-light;
+    border-bottom-color: white;
     background: white;
     * {
       color: $font-dark;
     }
-  }
-  &.activeBtn {
-    border-color: $border-light;
-    border-bottom-color: white;
-    // Transitions off when mini cart is toggled to match appearance
-    transition: none;
   }
 }
 
