@@ -23,8 +23,10 @@ Following [typical media queries](https://www.w3schools.com/howto/howto_css_medi
 
 Measurements between the two prototypes provided are interpolated. For example, `font-size: 12px` on mobile and `font-size: 16px` on desktop means `font-size: 14px` on tablet.
 
-## Other Notes
-
 ## Automated Testing
 
 This project does not utilise automated testing due to my limited experience with testing frameworks such as Jest and Cypress. However, I have plans to learn them this year.
+
+---
+
+Thanks for reviewing 🙏
